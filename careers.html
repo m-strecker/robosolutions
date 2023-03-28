@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>careers page</title>
+    </head>
+
+    <style>
+        #formstyle select{
+            background-color: lightgray;
+        }
+
+    </style>
+
+    <body>
+        <h1>Register</h1>
+        <div id="formstyle">
+            <form onclick="return false" >
+                
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="Full Name" pattern=".{8,}" title="Eight or more characters" required> <br> <br>
+                <label for="exp">Experience</label>
+                <input type="number" name="exp" id="exp" placeholder="Experience"  required><br><br>
+                <label for="vacancy">Vacancy</label>
+                <select name="vacancy" id="vacancy" required>
+                    <option value="Android Developer">Android Developer</option>
+                    <option value="Full Stack Developer">Full Stack Developer</option>
+                    <option value="Consultant">Consultant</option>
+                    <option value="Research & Development">Research & Development</option>
+                </select><br><br>
+                <label for="jobtype">Job Type</label>
+                <select name="jobtype" id="jobtype" required>
+                    <option value="fulltime">Full-Time</option>
+                    <option value="parttime">Part-Time</option>
+                    <option value="freelance">Freelance</option>
+                    <option value="intern">Intern</option>
+                </select><br><br>
+                <input type="submit" value="Apply">
+                
+            </form>
+        </div>
+
+    </body>
+
+</html>
